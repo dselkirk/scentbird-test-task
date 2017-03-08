@@ -4,7 +4,7 @@ build/
 .tmp/
 nginx.conf
 npm-debug.log
-.idea
+.idea/
 node_modules.bak
 my-site.conf
 .apptime

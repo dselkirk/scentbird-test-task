@@ -2,7 +2,7 @@
 const React = require('react');
 const T = React.PropTypes;
 
-const Html = ({ title = 'Amazing Default Title', body, manifest }) => {
+const Html = ({ title = 'Payment Page', body, manifest }) => {
   return (
     <html lang='en'>
       <head>

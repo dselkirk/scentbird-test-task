@@ -1,10 +1,10 @@
 import React from 'react';
 import { render } from 'react-dom';
-import { Router, browserHistory } from 'react-router';
+import { App } from './containers/App/App.js';
 
-// Import your routes so that you can pass them to the <Router /> component
-import routes from './routes.js';
+// Favicon link is in the template, this just makes webpack package it up for us
+import './images/favicon.ico';
 
 render((
-  <Router routes={routes} history={browserHistory} />
+  <App/>
 ), document.getElementById('root'));
