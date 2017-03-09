@@ -8,7 +8,7 @@ export default class Input extends React.Component {
   render() {
     return (
       <div className={cx('input')}>
-        <input type="text" value="test"/>
+        <input className={cx('input-field')} type="text" value="test"/>
       </div>
     );
   }

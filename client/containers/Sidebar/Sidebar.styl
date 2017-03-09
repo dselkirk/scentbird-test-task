@@ -2,22 +2,46 @@
 
 .sidebar-product
   border: 1px solid $gray
-  padding: 40px 30px
+  padding: 40px 30px 28px
 
-.sidebar-product-image
-  text-align: center
+  &-image
+    text-align: center
+    margin: 0 27px 42px 0
 
-.sidebar-product-table
-  width: 100%
+  &-table
+    width: 100%
 
-.sidebar-product-value
-  text-align: right
+    &--total
+      font-family: 'Gotham'
+      font-size: 16px
+      margin-top: 11px
 
-.sidebar-product-info
-  border-top: 1px solid $gray
-  border-bottom: 1px solid $gray
+  &-value
+    text-align: right
+    line-height: 26px
 
-.sidebar-product-link
-  cursor: pointer
-  color: $pink
-  border-bottom: 1px dashed $dark-gray
+    &--discount
+      color: $pink
+
+  &-info
+    border-top: 1px solid $gray
+    border-bottom: 1px solid $gray
+    padding: 15px 0
+    margin: -3px
+
+  &-code
+    font-size: 16px
+    padding-top: 9px
+
+  &-link
+    cursor: pointer
+    color: $pink
+    border-bottom: 1px dashed $dark-gray
+
+.sidebar
+  &-shipping
+    margin-top: 25px
+
+    &-description
+      line-height: 21px
+      padding-top: 5px

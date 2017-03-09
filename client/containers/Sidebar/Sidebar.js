@@ -31,7 +31,7 @@ export class Sidebar extends React.Component {
                 </tr>
                 <tr>
                   <td>Discount</td>
-                  <td className={cx('sidebar-product-value')}>-$5</td>
+                  <td className={cx('sidebar-product-value', 'sidebar-product-value--discount')}>-$5</td>
                 </tr>
                 <tr>
                   <td>Credit (Balance $100)</td>
@@ -40,7 +40,7 @@ export class Sidebar extends React.Component {
               </tbody>
             </table>
           </div>
-          <table className={cx('sidebar-product-table')}>
+          <table className={cx('sidebar-product-table', 'sidebar-product-table--total')}>
             <tbody>
               <tr>
                 <td>TOTAL</td>
@@ -48,12 +48,12 @@ export class Sidebar extends React.Component {
               </tr>
             </tbody>
           </table>
-          <p>Have a <span className={cx('sidebar-product-link')}>coupon code</span>?</p>
+          <p className={cx('sidebar-product-code')}>Have a <span className={cx('sidebar-product-link')}>coupon code</span>?</p>
         </div>
-
-
-        <img src={shipping}/>
-        <p>You will receive an email confirmation when recipient accepts your gift. Scentbird ships between the 15th and the 18th of every month. Recipient will receive an email confirmation of shipment every month. Please allow 5-7 days for delivery.</p>
+        <div className={cx('sidebar-shipping')}>
+          <img src={shipping}/>
+          <p className={cx('sidebar-shipping-description')}>You will receive an email confirmation when recipient accepts your gift. Scentbird ships between the 15th and the 18th of every month. Recipient will receive an email confirmation of shipment every month. Please allow 5-7 days for delivery.</p>
+        </div>
       </div>
     );
   }
